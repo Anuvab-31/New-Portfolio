@@ -1,0 +1,37 @@
+@import '../../colorVariables.scss';
+
+.form-label{
+    margin-top: 1rem;
+    color: var(--color-text);
+    font-weight: bold;
+}
+.progress{
+    background-color: var(--color-text);
+    border-radius: 10px;
+}
+.progress-bar{
+    border-radius: 10px;
+    background-color: var(--color-progress-bar);
+   
+}
+.skill-set{
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+  @media  (max-width:767px){
+    .main {
+        height: auto !important; 
+        width: 100%;
+    }
+    
+    
+}
+
+@media (min-width:768px) and (max-width: 1200px) {
+    .main {
+        height: auto !important;
+        width: 100%;
+    }
+
+
+}

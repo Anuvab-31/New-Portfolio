@@ -1,0 +1,140 @@
+@import '../../colorVariables.scss';
+
+.text-box {
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.text1 {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.text2 {
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "poppins";
+  letter-spacing: 5px;
+  background: linear-gradient(to right, var(--color-text2) 10%, var(--color-text2-animation) 30%, var(--color-text2-animation) 60%, var(--color-text2) 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2.5s linear infinite;
+
+  @keyframes shine {
+    from {
+      background-position: 200% center;
+    }
+  }
+}
+
+.text3 {
+  opacity: 0.9;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.dynamic-text {
+  display: flex;
+  margin: 0 auto;
+
+}
+
+span::before {
+  margin-left: 1rem;
+  color: var(--color-text-span);
+  font-weight: bold;
+  content: "";
+  animation: animate 4s infinite;
+}
+
+@keyframes animate {
+  0% {
+    content: "Frontend Developer.";
+  }
+
+  50% {
+    content: "Flutter Developer.";
+  }
+
+  100% {
+    content: "Web Developer.";
+  }
+}
+
+.image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-top: 6rem;
+  background-image: url("../../assets/image/anu6.png");
+  background-position: 50% 60%;
+  background-size: cover;
+  background-color: var(--color-image-background);
+  border: 10px solid var(--color-image-div-background);
+  Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+@media (max-width: 767px) {
+
+  .text-box {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  .text1 {
+    font-size: 1.4rem;
+  }
+
+  .text2 {
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+    .image {
+      margin-left: 2rem;
+      margin-top: 4rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .text-box {
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+
+  .text1 {
+    font-size: 1.4rem;
+  }
+
+  .text2 {
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .image {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+}
+
+
+
+
+
+
+
+  

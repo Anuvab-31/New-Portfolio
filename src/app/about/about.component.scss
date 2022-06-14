@@ -1,0 +1,98 @@
+@import '../../colorVariables.scss';
+
+
+
+  .image img {
+    height: 20rem;
+    margin-top: 1.8rem;
+    border: 5px solid var(--color-image-border);
+    border-radius: 30px;
+  }
+   
+  .sub-title {
+  font-family: 'Playball', cursive !important;
+  color: var(--color-sub-title);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  .paragraph p {
+    color: var(--color-text);
+    opacity: 0.9;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+
+  .btn {
+    width: 9rem;
+    padding: 8px 20px;
+    color: var(--color-button-textcolor);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 0.4s linear;
+    background-color: var(--color-button-background);
+  }
+  .btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 767px) {
+    // .main {
+    //   height: auto !important;
+    // }
+    .row {
+      display: block;
+    }
+    .paragraph p {
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 0rem 2rem 0rem 2rem;
+      letter-spacing: 0rem;
+      margin-top: 0rem;
+    }
+    .image {
+      text-align: center !important;
+    }
+    .btn {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+    }
+  }
+  
+@media (min-width: 768px)  and (max-width: 1200px) {
+  // .main {
+  //   height: auto !important;
+  // }
+
+  // .row {
+  //   display: block;
+  // }
+
+  .paragraph p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0rem 2rem 0rem 2rem;
+    letter-spacing: 0rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+  }
+
+  .image {
+    text-align: center !important;
+  }
+
+  .btn {
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+}
+

@@ -1,0 +1,42 @@
+<!-- <p>popup-content works!</p> -->
+
+    <div *ngIf="isThemePopupActive">
+      <div class="overlay" (click)="onClickClosePopup()"></div>
+      <div class="close-icon" (click)="closePopup()">
+        <i class="far fa-times-circle crossIcon"></i>
+      </div>
+      <div class="modal-popup">
+        <div class="content">
+          <div class="popup-heading-container">
+                <div class="popup-title">Customize Your Theme</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <label class="form-label">Customize Your Colours.</label>
+              </div>
+              <div class="colors">
+                <div class="purple active"    (click)="Theme('purple')" [ngClass]="{'active':colorChange}"></div>
+                <div class="red "             (click)="Theme('red')"    [ngClass]="{'active':colorChange1}"></div>
+                <div class="blue"             (click)="Theme('blue')"   [ngClass]="{'active':colorChange2}"></div>
+                <div class="orange"           (click)="Theme('orange')" [ngClass]="{'active':colorChange3}"></div>
+                <div class="green"            (click)="Theme('green')"  [ngClass]="{'active':colorChange4}"></div>
+                <div class="yellow"           (click)="Theme('yellow')" [ngClass]="{'active':colorChange5}"></div>
+              </div>
+           </div>
+        </div>
+        <div class="row">
+            <div class="">
+              <div>
+                <label class="form-label">Customize Your Backgrounds.</label>
+              </div>
+              <div class="colors">
+                <button class="btn" (click)="defaultTheme()">Default</button>
+                <button class="btn light-dark" (click)="lightDarkTheme()">Light Dark</button>
+                <button class="btn dark" (click)="darkTheme()">Dark</button>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>

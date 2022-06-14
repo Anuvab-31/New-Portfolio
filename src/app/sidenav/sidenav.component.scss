@@ -1,0 +1,265 @@
+@import '../../colorVariables.scss';
+
+
+
+
+.wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh !important;
+
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background-color: var(--color-left-nav-background);
+  margin: 0;
+  padding: 0;
+  Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.main_content {
+  height: 100vh !important;
+  width: 100%;
+  margin-left: 220px;
+  background-color: var(--color-right-nav-background);
+}
+
+.wrapper .main_content .header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.sidenav-nav-item {
+  padding: 0.4rem 0rem;
+}
+
+.image {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  background-image: url("../../assets/image/anu6.png");
+  background-position: 50% 60%;
+  background-size: cover;
+  background-color: var(--color-image-background);
+  border: 5px solid $color-image-div-background;
+  Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.sub-title {
+  color: var(--color-sub-title);
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active-sidenav {
+  color: var(--color-active-nav) !important;
+  background-color: var(--color-active-nav-background);
+  border-left: 2px solid var(--color-active-nav);
+}
+
+.nav-link {
+  color: var(--color-nav-link);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: var(--color-hover);
+}
+
+.nav-name {
+  margin-left: 1rem;
+}
+
+.icons {
+  font-size: 1.3rem;
+  letter-spacing: 1rem;
+  margin-left: 1.3rem;
+  margin-top: 1rem;
+}
+
+.icons .fab {
+  color: var(--color-icon);
+  cursor: pointer;
+}
+
+.icons .far {
+  color: var(--color-icon);
+  cursor: pointer;
+}
+
+.icons .fab:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.icons .far:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.fas {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+.popup-button {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  float: right;
+  padding: 4px;
+  padding-left: 8px;
+  font-size: 1.2rem;
+  color: var(--color-sub-title);
+  background-color: var(--color-text);
+  cursor: pointer;
+}
+
+.crossIcon {
+  background-color: var(--color-active-nav);
+  font-size: 35px;
+  color: var(--color-popup-close-background);
+  border-radius: 19px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+
+@media  (max-width: 767px)  {
+  .menuClass {
+    left: 0px !important;
+    transition: 0.4s ease-in-out;
+    height: 100%;
+  }
+
+  .fas {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+  }
+
+  .wrapper {
+    height: 100vh !important;
+  }
+
+  .wrapper .sidebar {
+    width: 220px;
+    height: 100vh;
+    z-index: 1;
+    left: -220px;
+    // top: 50px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .wrapper .main_content {
+    // height: 75rem !important;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .popup-button {
+    margin-left: 80%;
+  }
+
+  .image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+  }
+
+  .sub-title {
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .icons {
+    font-size: 1.6rem;
+
+  }
+
+}
+// @media (min-width: 767px) and (max-width: 1200px){
+//   .menuClass {
+//     left: 0px !important;
+//     transition: 0.4s ease-in-out;
+//     height: 100%;
+//   }
+
+//   .fas {
+//     font-size: 1.5rem;
+//     font-weight: bold;
+//     display: block;
+//   }
+
+//   .wrapper {
+//     height: 100vh !important;
+//   }
+
+//   .wrapper .sidebar {
+//     width: 220px;
+//     height: 100vh;
+//     z-index: 1;
+//     left: -220px;
+//     // top: 50px;
+//     transition: 0.4s ease-in-out;
+//   }
+
+//   .wrapper .main_content {
+//     // height: 75rem !important;
+//     width: 100%;
+//     margin-left: 0px;
+//   }
+
+//   .popup-button {
+//     margin-left: 80%;
+//   }
+
+//   .image {
+//     height: 10rem;
+//     width: 10rem;
+//     border-radius: 50%;
+//     margin-top: 4rem;
+//     margin-left: 2rem;
+
+//   }
+
+//   .sub-title {
+//     margin-left: 1.2rem;
+//     font-size: 1.4rem;
+//   }
+
+//   .nav-link {
+//     font-size: 1.3rem;
+//   }
+
+//   .icons {
+//     font-size: 1.6rem;
+
+//   }
+
+// }

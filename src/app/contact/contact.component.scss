@@ -1,0 +1,164 @@
+@import '../../colorVariables.scss';
+
+
+  .para1 {
+    color: var(--color-text);
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .left-content {
+    padding-top: 4.5rem;
+  }
+  .card {
+    margin-top: 0.5rem;
+    background-color: var(--color-card) !important;
+    border-radius: 10px;
+    Box-shadow:0 10px 20px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.23);
+    height: 380px;
+  }
+  .contact {
+    color: var(--color-text);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .form-label {
+    text-align: left;
+    color: var(--color-text);
+  }
+  .address {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-text);
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  .icon {
+    width: 2rem;
+  }
+  .fas {
+    color: var(--color-icon);
+    font-weight: bold;
+  }
+  .far {
+    color: var(--color-icon);
+    font-weight: bold;
+  }
+  
+  .copyright {
+    font-size: 1.3rem;
+  }
+  .text-input {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    color: var(--color-button-textcolor);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 0.4s linear;
+    background-color: var(--color-button-background);
+  }
+  .btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  
+
+    
+  @media (max-width: 767px) {
+    .main {
+      height: auto;
+      width: 100%;
+    }
+    .para1 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .para2 {
+      font-size: 13px;
+      margin-top: 1rem;
+    }
+    .row {
+      display: block !important;
+    }
+    .left-content {
+      color: #ffffff;
+      opacity: 0.9;
+      margin-top: 1.5rem;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    .left-content {
+      padding-top: 1rem !important;
+    }
+    .right-content {
+      margin-top: 1.5rem;
+    }
+    .india {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .signature {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+  }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .main {
+        height: auto;
+        width: 100%;
+      }
+  
+      .para1 {
+        font-size: 15px;
+        text-align: center;
+      }
+  
+      .para2 {
+        font-size: 13px;
+        margin-top: 1rem;
+      }
+  
+      // .row {
+      //   display: block !important;
+      // }
+  
+      .left-content {
+        color: #ffffff;
+        opacity: 0.9;
+        margin-top: 1.5rem;
+      }
+  
+      .contact {
+        text-align: center;
+        font-size: 1.3rem;
+      }
+  
+      .left-content {
+        padding-top: 1rem !important;
+      }
+  
+      .right-content {
+        margin-top: 1.5rem;
+      }
+  
+      .india {
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+  
+      .signature {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+    }
+  

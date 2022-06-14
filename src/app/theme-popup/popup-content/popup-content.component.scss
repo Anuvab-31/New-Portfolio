@@ -1,0 +1,175 @@
+@import "../../../colorVariables.scss";
+
+.overlay {
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  background-color: var(--color-overlay-background);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-popup {
+  width: 36%;
+  margin: 0 auto;
+  position: fixed;
+  left: 35%;
+  top: 30%;
+  border-radius: 12px;
+  height: auto;
+  z-index: 9900 !important;
+  background: var(--color-card) 0% 0% no-repeat padding-box !important;
+  ;
+  // box-shadow: 0px 3px 6px $color-modal-popup-boxshadow;
+  Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: auto;
+
+  @media (max-width: 767.98px) {
+    width: 96%;
+    left: 2%;
+    top: 2%;
+    height: 96%;
+  }
+
+  padding: 2rem;
+}
+
+.close-icon {
+  position: fixed;
+  top: 11rem;
+  right: 28%;
+  z-index: 9999;
+}
+
+.crossIcon {
+  background-color: var(--color-active-nav);
+  font-size: 32px;
+  color: var(--color-popup-close-background);
+  border-radius: 19px;
+  cursor: pointer;
+}
+
+.popup-title {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-label {
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purple {
+  background-color: var(--color);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red {
+  background-color: var(--color1);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: var(--color2);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: var(--color3);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.green {
+  background-color: var(--color4);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: var(--color5);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--color-btn);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  width: 7.5rem;
+}
+
+.light-dark {
+  background-color: var(--color-popup-button-background1);
+  color: var(--color-popup-button);
+}
+
+.dark {
+  background-color: var(--color-popup-button-background2);
+  color: var(--color-popup-button);
+}
+
+.active {
+  border: 3px solid var(--color-text);
+}
+
+@media (max-width: 767px) {
+  .modal-popup {
+    width: 96% !important;
+    left: 2% !important;
+    top: 30% !important;
+    height: auto;
+  }
+
+  .close-icon {
+    position: fixed;
+    top: 16.5rem;
+    right: 0.5%;
+    z-index: 9999;
+  }
+
+  .crossIcon {
+    background-color: $color-button-close;
+    font-size: 32px;
+    color: $color-popup-close-background ;
+    border-radius: 19px;
+    cursor: pointer;
+  }
+
+  .form-label {
+    margin-top: 1rem;
+  }
+
+  .btn:nth-child(2) {
+    margin-left: 0.4rem;
+    white-space: nowrap;
+  }
+
+  .btn:nth-child(3) {
+    margin-left: 0.4rem;
+    white-space: nowrap;
+  }
+}
