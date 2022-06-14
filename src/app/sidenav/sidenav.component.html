@@ -1,4 +1,3 @@
- <!-- <p>sidenav works!</p> -->
 
 <div class="wrapper">
     <div class="sidebar" [class.menuClass]="menuVariable">
@@ -53,7 +52,7 @@
       </div>
     </div>
 
-    <div class="main_content">
+    <div class="main_content" style="height: 100%;">
          <div class="header">
          <div *ngIf="icon" (click)="openMenu()"><i class="fas fa-bars"></i></div>
          <div *ngIf="icon1" (click)="closeMenu()"><i class="far fa-times-circle crossIcon"></i></div>

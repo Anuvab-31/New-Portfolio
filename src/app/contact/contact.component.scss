@@ -35,7 +35,7 @@
     font-size: 1.2rem;
   }
   .icon {
-    width: 2rem;
+    width: 0.8rem;
   }
   .fas {
     color: var(--color-icon);
@@ -73,12 +73,13 @@
     
   @media (max-width: 767px) {
     .main {
-      height: auto;
+      height: 100vh !important;
       width: 100%;
     }
     .para1 {
-      font-size: 15px;
+      font-size: 18px;
       text-align: center;
+      margin-top: 1.5rem;
     }
     .para2 {
       font-size: 13px;
